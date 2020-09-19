@@ -51,25 +51,25 @@ const Socials = () => {
         <FontAwesomeIcon icon={faInstagram} size="2x" className="h-10 w-10" />
       </a>
       <a href="https://qiita.com/kanye__east" target="_blank" className="px-2">
-        <img src="/qiita.png" width="40" />
+        <img src="/qiita.png" width="40" alt="Qiita logo" />
       </a>
       <a href="https://note.com/taishikato" target="_blank">
-        <img src="/note.svg" className="h-10 w-10" />
+        <img src="/note.svg" className="h-10 w-10" alt="note logo" />
       </a>
       <style jsx>{`
-        .linkedin:hover {
+        .linkedin {
           color: #0077b5;
         }
-        .medium:hover {
+        .medium {
           color: #12100f;
         }
-        .github:hover {
+        .github {
           color: #333;
         }
-        .twitter:hover {
+        .twitter {
           color: #1ea1f2;
         }
-        .instagram:hover {
+        .instagram {
           color: #000000;
         }
       `}</style>
