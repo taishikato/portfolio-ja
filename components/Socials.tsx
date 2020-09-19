@@ -57,19 +57,19 @@ const Socials = () => {
         <img src="/note.svg" className="h-10 w-10" />
       </a>
       <style jsx>{`
-        .linkedin:hover {
+        .linkedin {
           color: #0077b5;
         }
-        .medium:hover {
+        .medium {
           color: #12100f;
         }
-        .github:hover {
+        .github {
           color: #333;
         }
-        .twitter:hover {
+        .twitter {
           color: #1ea1f2;
         }
-        .instagram:hover {
+        .instagram {
           color: #000000;
         }
       `}</style>
