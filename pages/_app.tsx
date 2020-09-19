@@ -33,11 +33,7 @@ function MyApp({ Component, pageProps }) {
         <meta key="og:title" property="og:title" content={title} />
         <meta key="og:site_name" property="og:site_name" content={title} />
         <meta key="og:url" property="og:url" content={url} />
-        <meta
-          key="og:image"
-          property="og:image"
-          content="https://res.cloudinary.com/the360gram/image/upload/v1533914896/Federation_Square_Melbourne_Victoria_Australia_c2xmej.jpg"
-        />
+        <meta key="og:image" property="og:image" content="/og-image.png" />
         <meta
           key="twitter:site"
           property="twitter:site"
