@@ -11,7 +11,7 @@ const ProjectCard: FC<Props> = ({ description, image, title, url }) => (
   <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
     <div className="rounded-lg h-64 overflow-hidden">
       <img
-        alt="content"
+        alt={`${title} サムネイル`}
         className="object-cover object-center h-full w-full"
         src={image}
       />
