@@ -33,7 +33,7 @@ const Skills = () => {
     <section>
       <Title>スキル</Title>
       <section className="">
-        <div className="container mt-5 mx-auto">
+        <div className="container mt-5">
           <div className="flex flex-wrap -m-4">
             <div className="p-4 lg:w-1/4 sm:w-1/2 w-full">
               <List title="バックエンド" items={backend} />
