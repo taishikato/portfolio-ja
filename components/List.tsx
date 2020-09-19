@@ -9,8 +9,8 @@ const List: FC<Props> = ({ title, items }) => (
   <>
     <h2 className="font-medium text-lg mb-4 text-sm">{title}</h2>
     <nav className="flex flex-col items-start -mb-1">
-      {items.map((item) => (
-        <div>
+      {items.map((item, index) => (
+        <div key={index}>
           <span className="bg-teal-100 text-teal-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
             <svg
               fill="none"
