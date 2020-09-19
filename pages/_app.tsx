@@ -27,17 +27,21 @@ function MyApp({ Component, pageProps }) {
         <meta
           key="keywords"
           name="keywords"
-          content="developer,web,javascript,react,Next.js,vue.js,nuxt.js,traveler,travel,adventure,portfolio"
+          content="developer,web,javascript,react,Next.js,vue.js,nuxt.js,portfolio,ポートフォリオ,加藤大志,エンジニア"
         />
         <meta key="og:type" property="og:type" content="website" />
         <meta key="og:title" property="og:title" content={title} />
         <meta key="og:site_name" property="og:site_name" content={title} />
         <meta key="og:url" property="og:url" content={url} />
-        <meta key="og:image" property="og:image" content="/og-image.png" />
+        <meta
+          key="og:image"
+          property="og:image"
+          content="https://portfolio.taishikato.com/og-image.png"
+        />
         <meta
           key="twitter:site"
           property="twitter:site"
-          content="@taishikat0"
+          content="@taishikat0_Ja"
         />
         <meta
           key="twitter:card"
