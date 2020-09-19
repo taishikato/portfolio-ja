@@ -9,7 +9,7 @@ export default function Home() {
       <main>
         <h1 className="font-extrabold text-6xl">Taishi Kato</h1>
 
-        <div className="my-12 flex flex-wrap items-center">
+        <div className="my-20 flex flex-wrap items-center">
           <div className="w-6/12 sm:w-2/12 pr-4">
             <img
               src="/taishi.jpeg"
@@ -26,13 +26,15 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="my-12">
+        <div className="my-20">
+          <Project />
+        </div>
+        <div className="my-20">
           <Skills />
         </div>
-        <div className="my-12">
+        <div className="my-20">
           <Oss />
         </div>
-        <Project />
       </main>
       <Footer />
     </div>
