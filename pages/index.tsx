@@ -2,8 +2,9 @@ import Skills from '../components/Skills';
 import Oss from '../components/Oss';
 import Project from '../components/Project';
 import Footer from '../components/Footer';
+import Blog from '../components/Blog';
 
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <div>
       <main>
@@ -42,8 +43,24 @@ export default function Home() {
         <div className="my-20">
           <Oss />
         </div>
+        <div className="my-20">
+          <Blog posts={posts} />
+        </div>
       </main>
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetch(
+    'https://api.rss2json.com/v1/api.json?rss_url=https://qiita.com/kanye__east/feed.atom',
+  );
+  const posts = await res.json();
+
+  return {
+    props: {
+      posts: posts.items,
+    }, // will be passed to the page component as props
+  };
 }
