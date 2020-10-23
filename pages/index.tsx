@@ -1,8 +1,8 @@
-import Skills from '../components/Skills';
-import Oss from '../components/Oss';
-import Project from '../components/Project';
-import Footer from '../components/Footer';
-import Blog from '../components/Blog';
+import Skills from "../components/Skills";
+import Oss from "../components/Oss";
+import Project from "../components/Project";
+import Footer from "../components/Footer";
+import Blog from "../components/Blog";
 
 export default function Home({ posts }) {
   return (
@@ -54,13 +54,23 @@ export default function Home({ posts }) {
 
 export async function getStaticProps() {
   const res = await fetch(
-    'https://api.rss2json.com/v1/api.json?rss_url=https://qiita.com/kanye__east/feed.atom',
+    "https://api.rss2json.com/v1/api.json?rss_url=https://qiita.com/kanye__east/feed.atom"
   );
   const posts = await res.json();
+  const postData = posts.items.map((post) => {
+    return {
+      guid: post.guid,
+      link: post.link,
+      thumbnail: post.thumbnail,
+      categories: post.categories,
+      title: post.title,
+      pubDate: post.pubDate,
+    };
+  });
 
   return {
     props: {
-      posts: posts.items,
+      posts: postData,
     }, // will be passed to the page component as props
   };
 }
